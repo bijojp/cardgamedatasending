@@ -1,0 +1,440 @@
+{
+	"textures": [
+		{
+			"image": "tickAnim.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 1011,
+				"h": 546
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "tick0.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 286,
+						"h": 254
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 3,
+						"h": 3
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 3,
+						"h": 3
+					}
+				},
+				{
+					"filename": "tick1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 286,
+						"h": 254
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 74,
+						"w": 118,
+						"h": 124
+					},
+					"frame": {
+						"x": 6,
+						"y": 1,
+						"w": 118,
+						"h": 124
+					}
+				},
+				{
+					"filename": "tick2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 286,
+						"h": 254
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 74,
+						"w": 118,
+						"h": 124
+					},
+					"frame": {
+						"x": 126,
+						"y": 1,
+						"w": 118,
+						"h": 124
+					}
+				},
+				{
+					"filename": "tick3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 286,
+						"h": 254
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 74,
+						"w": 118,
+						"h": 124
+					},
+					"frame": {
+						"x": 246,
+						"y": 1,
+						"w": 118,
+						"h": 124
+					}
+				},
+				{
+					"filename": "tick4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 286,
+						"h": 254
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 74,
+						"w": 118,
+						"h": 124
+					},
+					"frame": {
+						"x": 366,
+						"y": 1,
+						"w": 118,
+						"h": 124
+					}
+				},
+				{
+					"filename": "tick5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 286,
+						"h": 254
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 74,
+						"w": 124,
+						"h": 131
+					},
+					"frame": {
+						"x": 486,
+						"y": 1,
+						"w": 124,
+						"h": 131
+					}
+				},
+				{
+					"filename": "tick6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 286,
+						"h": 254
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 74,
+						"w": 130,
+						"h": 138
+					},
+					"frame": {
+						"x": 612,
+						"y": 1,
+						"w": 130,
+						"h": 138
+					}
+				},
+				{
+					"filename": "tick7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 286,
+						"h": 254
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 74,
+						"w": 136,
+						"h": 145
+					},
+					"frame": {
+						"x": 744,
+						"y": 1,
+						"w": 136,
+						"h": 145
+					}
+				},
+				{
+					"filename": "tick8.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 286,
+						"h": 254
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 74,
+						"w": 142,
+						"h": 151
+					},
+					"frame": {
+						"x": 1,
+						"y": 148,
+						"w": 142,
+						"h": 151
+					}
+				},
+				{
+					"filename": "tick9.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 286,
+						"h": 254
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 74,
+						"w": 147,
+						"h": 158
+					},
+					"frame": {
+						"x": 145,
+						"y": 148,
+						"w": 147,
+						"h": 158
+					}
+				},
+				{
+					"filename": "tick10.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 286,
+						"h": 254
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 74,
+						"w": 153,
+						"h": 165
+					},
+					"frame": {
+						"x": 294,
+						"y": 148,
+						"w": 153,
+						"h": 165
+					}
+				},
+				{
+					"filename": "tick11.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 286,
+						"h": 254
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 74,
+						"w": 176,
+						"h": 165
+					},
+					"frame": {
+						"x": 449,
+						"y": 148,
+						"w": 176,
+						"h": 165
+					}
+				},
+				{
+					"filename": "tick12.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 286,
+						"h": 254
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 74,
+						"w": 199,
+						"h": 165
+					},
+					"frame": {
+						"x": 627,
+						"y": 148,
+						"w": 199,
+						"h": 165
+					}
+				},
+				{
+					"filename": "tick13.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 286,
+						"h": 254
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 55,
+						"w": 222,
+						"h": 184
+					},
+					"frame": {
+						"x": 1,
+						"y": 315,
+						"w": 222,
+						"h": 184
+					}
+				},
+				{
+					"filename": "tick14.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 286,
+						"h": 254
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 32,
+						"w": 245,
+						"h": 207
+					},
+					"frame": {
+						"x": 225,
+						"y": 315,
+						"w": 245,
+						"h": 207
+					}
+				},
+				{
+					"filename": "tick15.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 286,
+						"h": 254
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 9,
+						"w": 268,
+						"h": 230
+					},
+					"frame": {
+						"x": 472,
+						"y": 315,
+						"w": 268,
+						"h": 230
+					}
+				},
+				{
+					"filename": "tick16.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 286,
+						"h": 254
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 9,
+						"w": 268,
+						"h": 230
+					},
+					"frame": {
+						"x": 742,
+						"y": 315,
+						"w": 268,
+						"h": 230
+					}
+				},
+				{
+					"filename": "tick17.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 286,
+						"h": 254
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 9,
+						"w": 268,
+						"h": 230
+					},
+					"frame": {
+						"x": 742,
+						"y": 315,
+						"w": 268,
+						"h": 230
+					}
+				},
+				{
+					"filename": "tick18.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 286,
+						"h": 254
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 9,
+						"w": 268,
+						"h": 230
+					},
+					"frame": {
+						"x": 742,
+						"y": 315,
+						"w": 268,
+						"h": 230
+					}
+				},
+				{
+					"filename": "tick19.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 286,
+						"h": 254
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 9,
+						"w": 268,
+						"h": 230
+					},
+					"frame": {
+						"x": 742,
+						"y": 315,
+						"w": 268,
+						"h": 230
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:f3096c4bb499f4e3e62cd2dfafd7b4ad:6483c08cc614d0ea9261c6ecdb04c8f0:6f52868c5d310c3d2df0d4d8fc777738$"
+	}
+}

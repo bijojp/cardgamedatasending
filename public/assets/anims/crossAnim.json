@@ -1,0 +1,167 @@
+{
+	"textures": [
+		{
+			"image": "crossAnim.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 118,
+				"h": 188
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "cross0.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 100,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 3,
+						"h": 3
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 3,
+						"h": 3
+					}
+				},
+				{
+					"filename": "cross1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 100,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 44,
+						"y": 44,
+						"w": 12,
+						"h": 12
+					},
+					"frame": {
+						"x": 6,
+						"y": 1,
+						"w": 12,
+						"h": 12
+					}
+				},
+				{
+					"filename": "cross2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 100,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 33,
+						"y": 33,
+						"w": 34,
+						"h": 34
+					},
+					"frame": {
+						"x": 20,
+						"y": 1,
+						"w": 34,
+						"h": 34
+					}
+				},
+				{
+					"filename": "cross3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 100,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 22,
+						"y": 22,
+						"w": 56,
+						"h": 56
+					},
+					"frame": {
+						"x": 56,
+						"y": 1,
+						"w": 56,
+						"h": 56
+					}
+				},
+				{
+					"filename": "cross4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 100,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 17,
+						"y": 17,
+						"w": 66,
+						"h": 66
+					},
+					"frame": {
+						"x": 1,
+						"y": 59,
+						"w": 66,
+						"h": 66
+					}
+				},
+				{
+					"filename": "cross5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 100,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 20,
+						"y": 20,
+						"w": 60,
+						"h": 60
+					},
+					"frame": {
+						"x": 1,
+						"y": 127,
+						"w": 60,
+						"h": 60
+					}
+				},
+				{
+					"filename": "cross6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 100,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 23,
+						"y": 23,
+						"w": 54,
+						"h": 54
+					},
+					"frame": {
+						"x": 63,
+						"y": 127,
+						"w": 54,
+						"h": 54
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:90b1bb7d6bedde61202df386fde19147:d15cc16a245e5c787a8d9818bd928f8b:752a5ee425f5495b20204ebcfbe99c14$"
+	}
+}

@@ -545,7 +545,7 @@ class GameScene extends Phaser.Scene {
 
 
     var xhr = new XMLHttpRequest();
-      var url = "https://expressserveronrailway-production.up.railway.app/post";
+      var url = "https://expressserveronrailway-production-00c1.up.railway.app/post";
       xhr.open("POST", url, true);
       xhr.setRequestHeader("Content-Type", "application/json");
       xhr.onreadystatechange = function () {

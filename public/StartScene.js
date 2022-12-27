@@ -57,18 +57,26 @@ class StartScene extends Phaser.Scene {
 
       // {"name":"Rohit","email":"rohit@email.com","id":7555}
 
-      // var xhr = new XMLHttpRequest();
-      // var url = "https://expressserveronrailway-production.up.railway.app/post";
-      // xhr.open("POST", url, true);
-      // xhr.setRequestHeader("Content-Type", "application/json");
-      // xhr.onreadystatechange = function () {
-      //     if (xhr.readyState === 4 && xhr.status === 200) {
-      //         var json = JSON.parse(xhr.responseText);
-      //         console.log(json.name + ", " + json.email+ ", " + json.id);
-      //     }
-      // };
-      // var data = JSON.stringify({"name":"Rohit","email":"rohit@email.com","id":7555});
-      // xhr.send(data);
+      var RandomTime = Phaser.Math.Between(100000000, 10000000000);
+
+      const d = new Date();
+      let time = d.getTime();
+
+
+      var xhr = new XMLHttpRequest();
+      var url = "https://expressserveronrailway-production-00c1.up.railway.app/postsomeotherdata";
+      xhr.open("POST", url, true);
+      xhr.setRequestHeader("Content-Type", "application/json");
+      xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+              var json = JSON.parse(xhr.responseText);
+              // console.log(json.name + ", " + json.email+ ", " + json.id);
+              console.log("data posted");
+
+          }
+      };
+      var data = JSON.stringify({"totalTime":RandomTime,"unixTime":time});
+      xhr.send(data);
       
 
 

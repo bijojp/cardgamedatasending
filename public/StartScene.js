@@ -75,8 +75,8 @@ class StartScene extends Phaser.Scene {
 
           }
       };
-      var data = JSON.stringify({"totalTime":RandomTime,"unixTime":time});
-      xhr.send(data);
+      var data1 = JSON.stringify({"totalTime":RandomTime,"unixTime":time});
+      xhr.send(data1);
       
 
 

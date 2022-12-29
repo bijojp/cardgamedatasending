@@ -62,7 +62,7 @@ class StartScene extends Phaser.Scene {
       const d = new Date();
       let time = d.getTime();
 
-      console.log("Version: " + "1.1");
+      console.log("Version: " + "1.2");
 
 
       var xhr = new XMLHttpRequest();

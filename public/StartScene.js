@@ -72,7 +72,7 @@ class StartScene extends Phaser.Scene {
 
       xhr.onreadystatechange = function () {
           if (xhr.readyState === 4 && xhr.status === 200) {
-              var json = JSON.parse(xhr.responseText);
+              // var json = JSON.parse(xhr.responseText);
               // console.log(json.name + ", " + json.email+ ", " + json.id);
               console.log("data posted");
             console.log(xhr);
@@ -85,7 +85,8 @@ class StartScene extends Phaser.Scene {
         retry(xhr)
       }
       xhr.onload = function (event) {
-        if (xhr.status < 200 || xhr.status >= 300)
+        // if (xhr.status < 200 || xhr.status >= 300)
+        if (xhr.readyState === 4 && xhr.status === 200)
           retry(xhr)
       }
       xhr.ontimeout = function (event) {

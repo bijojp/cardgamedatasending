@@ -62,33 +62,66 @@ class StartScene extends Phaser.Scene {
       const d = new Date();
       let time = d.getTime();
 
-      console.log("Version: " + "1");
+      console.log("Version: " + "1.1");
 
 
       var xhr = new XMLHttpRequest();
       var url = "https://expressserveronrailway-production-00c1.up.railway.app/postsomeotherdata";
-      xhr.open("POST", url, true);
-      xhr.setRequestHeader("Content-Type", "application/json");
-      xhr.onreadystatechange = function () {
-          if (xhr.readyState === 4 && xhr.status === 200) {
-              var json = JSON.parse(xhr.responseText);
-              // console.log(json.name + ", " + json.email+ ", " + json.id);
-              console.log("data posted");
-            console.log(xhr);
+      // xhr.open("POST", url, true);
+      // xhr.setRequestHeader("Content-Type", "application/json");
+    //   xhr.onreadystatechange = function () {
+    //       if (xhr.readyState === 4 && xhr.status === 200) {
+    //           var json = JSON.parse(xhr.responseText);
+    //           // console.log(json.name + ", " + json.email+ ", " + json.id);
+    //           console.log("data posted");
+    //         console.log(xhr);
+    //       }
+    //   };
+    //   var data1 = JSON.stringify({"totalTime":RandomTime,"unixTime":time});
+    //   xhr.send(data1);
 
-
-          }else{
-            console.log(xhr);
-          }
-      };
-      var data1 = JSON.stringify({"totalTime":RandomTime,"unixTime":time});
-      xhr.send(data1);
+    xhr.onerror = function (event) {
+      retry(xhr)
+    }
+    xhr.onload = function (event) {
+      if (xhr.status < 200 || xhr.status >= 300)
+        retry(xhr)
+    }
+    xhr.ontimeout = function (event) {
+      retry(xhr)
+    }
+    openAndSend(xhr)
       
 
 
     });
 
+
+
+
+    function retry(xhr) {
+      setTimeout(function () {
+        openAndSend(xhr)
+      }, 1000)
+    }
+    function openAndSend(xhr) {
+      // xhr.open("GET", "http://example.com/")
+
+      xhr.open("POST", url, true);
+      xhr.setRequestHeader("Content-Type", "application/json");
+      // xhr.send()
+
+      var data1 = JSON.stringify({"totalTime":RandomTime,"unixTime":time});
+      xhr.send(data1);
+    }
+
+
+
+
   }
+
+
+
 
   update() {}
 }

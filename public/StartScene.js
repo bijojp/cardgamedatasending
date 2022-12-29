@@ -80,17 +80,10 @@ class StartScene extends Phaser.Scene {
     //   var data1 = JSON.stringify({"totalTime":RandomTime,"unixTime":time});
     //   xhr.send(data1);
 
-    xhr.onerror = function (event) {
-      retry(xhr)
-    }
-    xhr.onload = function (event) {
-      if (xhr.status < 200 || xhr.status >= 300)
-        retry(xhr)
-    }
-    xhr.ontimeout = function (event) {
-      retry(xhr)
-    }
-    openAndSend(xhr)
+          }
+      };
+      var data = JSON.stringify({"totalTime":RandomTime,"unixTime":time});
+      xhr.send(data);
       
 
 

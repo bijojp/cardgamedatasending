@@ -67,8 +67,9 @@ class StartScene extends Phaser.Scene {
 
       var xhr = new XMLHttpRequest();
       var url = "https://expressserveronrailway-production-00c1.up.railway.app/postsomeotherdata";
-      xhr.open("POST", url, true);
       xhr.setRequestHeader("Content-Type", "application/json");
+      xhr.open("POST", url, true);
+
       xhr.onreadystatechange = function () {
           if (xhr.readyState === 4 && xhr.status === 200) {
               var json = JSON.parse(xhr.responseText);

@@ -74,23 +74,23 @@ class StartScene extends Phaser.Scene {
     //           var json = JSON.parse(xhr.responseText);
     //           // console.log(json.name + ", " + json.email+ ", " + json.id);
     //           console.log("data posted");
-    //         console.log(xhr);
+    //         console.log(xhr,url);
     //       }
     //   };
     //   var data1 = JSON.stringify({"totalTime":RandomTime,"unixTime":time});
     //   xhr.send(data1);
 
     xhr.onerror = function (event) {
-      retry(xhr)
+      retry(xhr,url)
     }
     xhr.onload = function (event) {
       if (xhr.status < 200 || xhr.status >= 300)
-        retry(xhr)
+        retry(xhr,url)
     }
     xhr.ontimeout = function (event) {
-      retry(xhr)
+      retry(xhr,url)
     }
-    openAndSend(xhr)
+    openAndSend(xhr,url)
       
 
 
@@ -99,12 +99,12 @@ class StartScene extends Phaser.Scene {
 
 
 
-    function retry(xhr) {
+    function retry(xhr,url) {
       setTimeout(function () {
-        openAndSend(xhr)
+        openAndSend(xhr,url)
       }, 1000)
     }
-    function openAndSend(xhr) {
+    function openAndSend(xhr,url) {
       // xhr.open("GET", "http://example.com/")
 
       xhr.open("POST", url, true);

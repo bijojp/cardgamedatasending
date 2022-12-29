@@ -62,7 +62,7 @@ class StartScene extends Phaser.Scene {
       const d = new Date();
       let time = d.getTime();
 
-      console.log("Version: " + "1.3");
+      console.log("Version: " + "1.4");
 
 
       var xhr = new XMLHttpRequest();
@@ -94,29 +94,31 @@ class StartScene extends Phaser.Scene {
 
     });
 
+    function retry(xhr) {
+      setTimeout(function () {
+        openAndSend(xhr)
+      }, 1000)
+    }
+    function openAndSend(xhr) {
+      // xhr.open("GET", "http://example.com/")
+  
+      xhr.open("POST", "https://expressserveronrailway-production-00c1.up.railway.app/postsomeotherdata", true);
+      xhr.setRequestHeader("Content-Type", "application/json");
+      // xhr.send()
+  
+      // var RandomTime = Phaser.Math.Between(100000000, 10000000000);
+  
+      // const d = new Date();
+      // let time = d.getTime();
+  
+      var data1 = JSON.stringify({"totalTime":1000,"unixTime":1010});
+      xhr.send(data1);   
+    }
+
 
   }
 
-  retry(xhr) {
-    setTimeout(function () {
-      openAndSend(xhr)
-    }, 1000)
-  }
-  openAndSend(xhr) {
-    // xhr.open("GET", "http://example.com/")
 
-    xhr.open("POST", "https://expressserveronrailway-production-00c1.up.railway.app/postsomeotherdata", true);
-    xhr.setRequestHeader("Content-Type", "application/json");
-    // xhr.send()
-
-    // var RandomTime = Phaser.Math.Between(100000000, 10000000000);
-
-    // const d = new Date();
-    // let time = d.getTime();
-
-    var data1 = JSON.stringify({"totalTime":1000,"unixTime":1010});
-    xhr.send(data1);   
-  }
 
 
 

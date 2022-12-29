@@ -67,8 +67,8 @@ class StartScene extends Phaser.Scene {
 
       var xhr = new XMLHttpRequest();
       var url = "https://expressserveronrailway-production-00c1.up.railway.app/postsomeotherdata";
-      // xhr.open("POST", url, true);
-      // xhr.setRequestHeader("Content-Type", "application/json");
+      xhr.open("POST", url, true);
+      xhr.setRequestHeader("Content-Type", "application/json");
       // xhr.onreadystatechange = function () {
       //     if (xhr.readyState === 4 && xhr.status === 200) {
       //         var json = JSON.parse(xhr.responseText);
@@ -83,7 +83,7 @@ class StartScene extends Phaser.Scene {
       xhr.onerror = function (event) {
         retry(xhr)
       }
-      xhr.onreadystatechange = function (event) {
+      xhr.onload = function (event) {
         if (xhr.status < 200 || xhr.status >= 300)
           retry(xhr)
       }
@@ -102,8 +102,8 @@ class StartScene extends Phaser.Scene {
     function openAndSend(xhr) {
       // xhr.open("GET", "http://example.com/")
   
-      xhr.open("POST", "https://expressserveronrailway-production-00c1.up.railway.app/postsomeotherdata", true);
-      xhr.setRequestHeader("Content-Type", "application/json");
+      // xhr.open("POST", "https://expressserveronrailway-production-00c1.up.railway.app/postsomeotherdata", true);
+      // xhr.setRequestHeader("Content-Type", "application/json");
       // xhr.send()
   
       // var RandomTime = Phaser.Math.Between(100000000, 10000000000);

@@ -111,12 +111,12 @@ class StartScene extends Phaser.Scene {
       xhr.setRequestHeader("Content-Type", "application/json");
       // xhr.send()
 
-      var RandomTime = Phaser.Math.Between(100000000, 10000000000);
+      // var RandomTime = Phaser.Math.Between(100000000, 10000000000);
 
-      const d = new Date();
-      let time = d.getTime();
+      // const d = new Date();
+      // let time = d.getTime();
 
-      var data1 = JSON.stringify({"totalTime":RandomTime,"unixTime":time});
+      var data1 = JSON.stringify({"totalTime":100000,"unixTime":121212});
       xhr.send(data1);
     }
 

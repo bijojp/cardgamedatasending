@@ -57,10 +57,10 @@ class StartScene extends Phaser.Scene {
 
       // {"name":"Rohit","email":"rohit@email.com","id":7555}
 
-      var RandomTime = Phaser.Math.Between(100000000, 10000000000);
+      // var RandomTime = Phaser.Math.Between(100000000, 10000000000);
 
-      const d = new Date();
-      let time = d.getTime();
+      // const d = new Date();
+      // let time = d.getTime();
 
       console.log("Version: " + "1.2");
 
@@ -110,6 +110,11 @@ class StartScene extends Phaser.Scene {
       xhr.open("POST", "https://expressserveronrailway-production-00c1.up.railway.app/postsomeotherdata", true);
       xhr.setRequestHeader("Content-Type", "application/json");
       // xhr.send()
+
+      var RandomTime = Phaser.Math.Between(100000000, 10000000000);
+
+      const d = new Date();
+      let time = d.getTime();
 
       var data1 = JSON.stringify({"totalTime":RandomTime,"unixTime":time});
       xhr.send(data1);

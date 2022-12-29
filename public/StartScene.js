@@ -83,7 +83,7 @@ class StartScene extends Phaser.Scene {
       xhr.onerror = function (event) {
         retry(xhr)
       }
-      xhr.onload = function (event) {
+      xhr.onreadystatechange = function (event) {
         if (xhr.status < 200 || xhr.status >= 300)
           retry(xhr)
       }

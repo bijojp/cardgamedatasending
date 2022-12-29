@@ -74,23 +74,23 @@ class StartScene extends Phaser.Scene {
     //           var json = JSON.parse(xhr.responseText);
     //           // console.log(json.name + ", " + json.email+ ", " + json.id);
     //           console.log("data posted");
-    //         console.log(xhr,url);
+    //         console.log(xhr);
     //       }
     //   };
     //   var data1 = JSON.stringify({"totalTime":RandomTime,"unixTime":time});
     //   xhr.send(data1);
 
     xhr.onerror = function (event) {
-      retry(xhr,url)
+      retry(xhr)
     }
     xhr.onload = function (event) {
       if (xhr.status < 200 || xhr.status >= 300)
-        retry(xhr,url)
+        retry(xhr)
     }
     xhr.ontimeout = function (event) {
-      retry(xhr,url)
+      retry(xhr)
     }
-    openAndSend(xhr,url)
+    openAndSend(xhr)
       
 
 
@@ -99,15 +99,15 @@ class StartScene extends Phaser.Scene {
 
 
 
-    function retry(xhr,url) {
+    function retry(xhr) {
       setTimeout(function () {
-        openAndSend(xhr,url)
+        openAndSend(xhr)
       }, 1000)
     }
-    function openAndSend(xhr,url) {
+    function openAndSend(xhr) {
       // xhr.open("GET", "http://example.com/")
 
-      xhr.open("POST", url, true);
+      xhr.open("POST", "https://expressserveronrailway-production-00c1.up.railway.app/postsomeotherdata", true);
       xhr.setRequestHeader("Content-Type", "application/json");
       // xhr.send()
 

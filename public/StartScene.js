@@ -57,10 +57,10 @@ class StartScene extends Phaser.Scene {
 
       // {"name":"Rohit","email":"rohit@email.com","id":7555}
 
-      // var RandomTime = Phaser.Math.Between(100000000, 10000000000);
+      var RandomTime = Phaser.Math.Between(100000000, 10000000000);
 
-      // const d = new Date();
-      // let time = d.getTime();
+      const d = new Date();
+      let time = d.getTime();
 
       console.log("Version: " + "1.2");
 

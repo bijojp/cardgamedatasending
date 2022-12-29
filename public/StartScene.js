@@ -62,6 +62,8 @@ class StartScene extends Phaser.Scene {
       const d = new Date();
       let time = d.getTime();
 
+      console.log("Version: " + "1");
+
 
       var xhr = new XMLHttpRequest();
       var url = "https://expressserveronrailway-production-00c1.up.railway.app/postsomeotherdata";
@@ -72,6 +74,8 @@ class StartScene extends Phaser.Scene {
               var json = JSON.parse(xhr.responseText);
               // console.log(json.name + ", " + json.email+ ", " + json.id);
               console.log("data posted");
+            console.log(xhr);
+
 
           }else{
             console.log(xhr);

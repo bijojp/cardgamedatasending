@@ -85,8 +85,8 @@ class StartScene extends Phaser.Scene {
         retry(xhr)
       }
       xhr.onload = function (event) {
-        // if (xhr.status < 200 || xhr.status >= 300)
-        if (xhr.readyState === 4 && xhr.status === 200)
+        if (xhr.status < 200 || xhr.status >= 300)
+        // if (xhr.readyState === 4 && xhr.status === 200)
           retry(xhr)
       }
       xhr.ontimeout = function (event) {

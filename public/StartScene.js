@@ -62,7 +62,7 @@
 //       const d = new Date();
 //       let time = d.getTime();
 
-//       console.log("Version: " + "1.4");
+      console.log("Version: " + "1.5");
 
 
 //       var xhr = new XMLHttpRequest();

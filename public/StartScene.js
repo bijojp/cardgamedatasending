@@ -193,20 +193,20 @@ class StartScene extends Phaser.Scene {
       let time = d.getTime();
 
 
-      // var xhr = new XMLHttpRequest();
-      // var url = "https://expressserveronrailway-production-00c1.up.railway.app/postsomeotherdata";
-      // xhr.open("POST", url, true);
-      // xhr.setRequestHeader("Content-Type", "application/json");
-      // xhr.onreadystatechange = function () {
-      //     if (xhr.readyState === 4 && xhr.status === 200) {
-      //         var json = JSON.parse(xhr.responseText);
-      //         // console.log(json.name + ", " + json.email+ ", " + json.id);
-      //         console.log("data posted");
+      var xhr = new XMLHttpRequest();
+      var url = "https://expressserveronrailway-production-00c1.up.railway.app/postsomeotherdata";
+      xhr.open("POST", url, true);
+      xhr.setRequestHeader("Content-Type", "application/json");
+      xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+              var json = JSON.parse(xhr.responseText);
+              // console.log(json.name + ", " + json.email+ ", " + json.id);
+              console.log("data posted");
 
-      //     }
-      // };
-      // var data = JSON.stringify({"totalTime":RandomTime,"unixTime":time});
-      // xhr.send(data);
+          }
+      };
+      var data = JSON.stringify({"totalTime":RandomTime,"unixTime":time});
+      xhr.send(data);
       
 
 
